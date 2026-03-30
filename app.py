@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 
 # --- CONFIGURATION IABD ---
 COEFF_CFA = 750000 
